@@ -18,19 +18,19 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
   </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 <nav class="navbar navbar-expand-lg fixed-top shadow bg-white">
   <div class="container-fluid">
     <a class="navbar-brand me-auto" href="#home">
-      <img src="c_logo.png" alt="logo" width="200" class="">
+      <img src="img/c_logo.png" alt="logo" width="200" class="">
     </a>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
       aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <img src="c_logo.png" alt="logo" width="200" class="">
+        <img src="img/c_logo.png" alt="logo" width="200" class="">
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
@@ -67,7 +67,7 @@
     <div class="col-6 px-5" id="title">
       <h3 class=" text-muted px-3">Hello, I'm</h3>
       <h1 class="fs-1" id="myname">Chandan Bhanja</h1>
-      <h2>Web Developer</h2>
+      <h2>Full Stack Developer</h2>
       <a name="" id="" class="btn btn-primary shadow m-3" href="#about" role="button">About Me</a>
       <div class="fs-1 p-3 px-4" id="#social-link">
           <a href="https://www.facebook.com" class=" text-decoration-none">
@@ -89,7 +89,7 @@
       </div>
     </div>
     <div class="col-6" id="myimage">
-      <img src="chandan.png" alt="" width="80%" >
+      <img src="img/chandan.png" alt="" width="80%" >
     </div>
   </div>
 </div>
@@ -97,15 +97,15 @@
 
 <!-- ----------------------------------about----------------------------------- -->
 <section id="about">
-  <div class="container py-5">
-    <div class="row justify-between bg-white align-items-center align-content-cente gap-4 py-5">
+  <div class="container">
+    <div class="row justify-between bg-white align-items-center align-content-cente gap-4">
       <h1 class="text-center fs-1 fw-bold text-black mb-4">About me</h1>
       <div class="col-6">
         <p class="text-black fs-2 fw-bold">
           I belive that if you succed in your life do hard work with smart work.
         </p>
         <p class="text-muted">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, velit repellendus earum, ullam rem recusandae rerum modi ducimus, adipisci id facilis cumque perferendis tempora consectetur ab explicabo suscipit fugiat odit.
+          Success in life often hinges on a combination of hard work and smart work. While diligence and persistence are crucial, strategic thinking and efficiency can amplify achievements. Integrating both approaches optimizes outcomes and ensures sustained progress towards personal and professional goals.
         </p>
         <div class="row">
           <div class="col text-center">
@@ -121,7 +121,7 @@
             <small class="text-muted">Teaching Experienced</small>
           </div>
         </div>
-        <a name="" id="abtn" class="btn btn-primary shadow m-3" href="Resume_Dev_up.pdf" role="button" download="">Download CV</a>
+        <a name="" id="abtn" class="btn btn-primary shadow m-3" href="Resume_Dev.pdf" role="button" download="">Download CV</a>
       </div>
       <div class="col-5">
         <div class="row py-3">
@@ -159,33 +159,26 @@
         </div>
       </div>
     </div>
-    <div class="row text-center gap-5 justify-content-center">
-      <div class="col-lg-3 bg-white p-4 rounded shadow">
-        <div class="service-item">
-          <div class="icon">
-            <i class="fa fa-code fs-2 fw-bold py-4 text-danger"></i>
+    <div class="container">
+      <div class="services-list">
+          <div>
+              <i class="fa-solid fa-laptop"></i>
+              <h2>Full Stack Developer</h2>
+              <p>Full Stack Developer with expertise in both front-end and back-end technologies</p>
+              <a href="#">Learn more</a>
           </div>
-          <h3>Full Stack Developer</h3>
-          <p>Full Stack Developer with expertise in both front-end and back-end technologies</p>
-        </div>
-      </div>
-      <div class="col-lg-3 bg-white p-4 rounded shadow">
-        <div class="service-item">
-          <div class="icon">
-            <i class="fa fa-lightbulb fs-2 fw-bold py-4 text-danger"></i>
+          <div>
+              <i class="fa-solid fa-crop"></i>
+              <h2>Creative Design</h2>
+              <p>Full Stack Developer with a keen eye for creative design.</p>
+              <a href="#">Learn more</a>
           </div>
-          <h3>Creative Design</h3>
-          <p>Full Stack Developer with a keen eye for creative design. </p>
-        </div>
-      </div>
-      <div class="col-lg-3 bg-white p-4 rounded shadow">
-        <div class="service-item">
-          <div class="icon">
-            <i class="fa fa-image fs-2 fw-bold py-4 text-danger"></i>
+          <div>
+              <i class="fa-regular fa-image"></i>
+              <h2>Photoshop</h2>
+              <p>Extensive experience in Adobe Photoshop, specializing in logo design and banner design.</p>
+              <a href="#">Learn more</a>
           </div>
-          <h3>Photoshop</h3>
-          <p>Extensive experience in Adobe Photoshop, specializing in logo design and banner design.</p>
-        </div>
       </div>
     </div>
   </div>
@@ -193,44 +186,37 @@
 
 <!-- ----------------------------Services----------------------- -->
 <section id="services">
-  <div class="container-lg py-5">
-    <div class="row justify-content-center py-5">
-      <div class="col-lg-8 justify-content-center">
-        <div class="about-title text-center py-4">
-          <h1 class="text-black">My Works</h1>
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media WebApp</h3>
+                    <p> Stay Connected, Stay Inspired</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_application" class="fa-solid fa-up-right-from-square"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Trading Website</h3>
+                    <p> YTrade Smart, Trade Secure</p>
+                    <a href="https://groww.in/p/trading" class="fa-solid fa-up-right-from-square"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Logo Design</h3>
+                    <p> Unleash Your Creativity with Photoshop</p>
+                    <a href="https://en.wikipedia.org/wiki/Logo" class="fa-solid fa-up-right-from-square"></a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="row justify-content-center text-center">
-      <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item shadow-lg py-4 rounded">
-          <div class="icon">
-            <img src="work-1.png" alt="" width="200px">
-          </div>
-          <h3>App Development</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, alias voluptatum accusamus magnam</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item  shadow-lg py-4 rounded">
-          <div class="icon">
-            <img src="work-2.png" alt="" width="200px">
-          </div>
-          <h3>Web Development</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, alias voluptatum accusamus magnam</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item  shadow-lg py-4 rounded">
-          <div class="icon">
-            <img src="work-3.png" alt="" width="200px">
-          </div>
-          <h3>Image Editing</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, alias voluptatum accusamus magnam</p>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 </section>
 
 <!-- -------------Contact-------------- -->
@@ -243,7 +229,7 @@
     </div> 
     <div class="row">
       <div class="col-md-5">
-        <div class="contact-item d-flex px-5">
+        <div class="contact-item d-flex px-5 py-3">
           <div class="icon">
             <i class="fa fa-envelope fa-2x  text-danger"></i>
           </div>
@@ -252,16 +238,16 @@
             <a href="mailto:chandanbhanja290@gmail.com" class=" text-muted text-decoration-none">chandanbhanja290@gmail.com</a>
           </div>
         </div>
-        <div class="contact-item d-flex px-5">
+        <div class="contact-item d-flex px-5 py-3">
           <div class="icon">
             <i class="fa fa-phone fa-2x text-danger"></i>
           </div>
-          <div class="text p-3">
+          <div class="text px-3">
             <h4>Call Me</h4>
             <a href="tel:+917477623328" class=" text-muted text-decoration-none">+91 7477623328</a>
           </div>
         </div>
-        <div class="contact-item d-flex px-5">
+        <div class="contact-item d-flex px-5 py-3">
           <div class="icon">
             <i class="fa-brands fa-linkedin fa-2x text-danger"></i>
           </div>
@@ -272,7 +258,7 @@
         </div>
       </div>
       <div class="col-md-7">
-        <form action="" class="form">
+        <form action="#" class="form">
           <input type="text" name="Name" placeholder="Your name" class="container-lg border-0 shadow py-2 px-2 mb-3">
           <input type="text" name="Email" placeholder="Your email" class="container-lg border-0 shadow py-2 px-2 mb-3">
           <textarea name="Message" id="" cols="30" rows="5" class="container-lg border-0 shadow py-2 px-2 mb-3" placeholder="Your message"></textarea>
